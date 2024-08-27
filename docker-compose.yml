@@ -16,7 +16,7 @@ services:
             retries: 10
 
     auth:
-        image: registry.gitlab.com/aracompany/fabcom/auth:v1.0
+        image: registry.gitlab.com/aracompany/fabcom/auth:master
         restart: always
         environment:
             NODE_ENV: 'production'
