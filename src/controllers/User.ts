@@ -69,8 +69,3 @@ export const signin = async (req: Request, res: Response) => {
 
     return res.status(200).json({ token, user });
 };
-
-export const signout = async (_req: Request, res: Response) => {
-    res.clearCookie('jwt');
-    res.status(200).json({ message: 'Signed out successfully' });
-};
